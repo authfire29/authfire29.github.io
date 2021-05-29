@@ -11,7 +11,7 @@ auth.onAuthStateChanged(
 		if (usuarioAuth && usuarioAuth.email) {
 			email.value = usuarioAuth.email;
 			nombre.value = usuarioAuth.displayName;
-			avartar.scr = usuarioAuth.photoURL;
+			avartar.src = usuarioAuth.photoURL;
 		} else {
 			auth.signInWithRedirect(provider);
 		}
